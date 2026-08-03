@@ -17,15 +17,15 @@ The Cribl AI Observability app gives teams one place to search, investigate, and
 
 The Setup Wizard lets admins onboard one or more AI data sources. Each source feeds one of two datasets.
 
-| Source                                                                                                                       | Mechanism                                           | Dataset             |
-| ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------- | ------------------- |
-| [Claude Compliance](https://platform.claude.com/docs/en/api/compliance)                                                      | Claude compliance API                               | `AI-o11y`           |
-| [Claude Code CLI](https://code.claude.com/docs/en/monitoring-usage)                                                          | OTLP gRPC                                           | `AI-o11y`           |
-| [Claude Cowork](https://support.claude.com/en/articles/14477985-monitor-claude-cowork-activity-with-opentelemetry)           | OTLP HTTP                                           | `AI-o11y`           |
-| [OpenAI Compliance](https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-and-edu-customers) | OpenAI compliance API                               | `AI-o11y`           |
-| [OpenAI Codex CLI](https://learn.chatgpt.com/docs/config-file/config-advanced#observability-and-telemetry)                   | OTLP gRPC (OpenTelemetry traces)                    | `AI-o11y`           |
-| [Cursor](https://cursor.com/docs/account/teams/admin-api)                                                                    | Cursor Admin API                                    | `AI-o11y-analytics` |
-| [Tailscale Aperture](https://tailscale.com/docs/aperture/observe-and-export)                                                 | Exported logs                                       | `AI-o11y`           |
+| Source                                                                                                                       | Mechanism                        | Dataset             |
+| ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------- | ------------------- |
+| [Claude Compliance](https://platform.claude.com/docs/en/api/compliance)                                                      | Claude compliance API            | `AI-o11y`           |
+| [Claude Code CLI](https://code.claude.com/docs/en/monitoring-usage)                                                          | OTLP gRPC                        | `AI-o11y`           |
+| [Claude Cowork](https://support.claude.com/en/articles/14477985-monitor-claude-cowork-activity-with-opentelemetry)           | OTLP HTTP                        | `AI-o11y`           |
+| [OpenAI Compliance](https://help.openai.com/en/articles/9261474-openai-compliance-platform-for-enterprise-and-edu-customers) | OpenAI compliance API            | `AI-o11y`           |
+| [OpenAI Codex CLI](https://learn.chatgpt.com/docs/config-file/config-advanced#observability-and-telemetry)                   | OTLP gRPC (OpenTelemetry traces) | `AI-o11y`           |
+| [Cursor](https://cursor.com/docs/account/teams/admin-api)                                                                    | Cursor Admin API                 | `AI-o11y-analytics` |
+| [Tailscale Aperture](https://tailscale.com/docs/aperture/observe-and-export)                                                 | Exported logs                    | `AI-o11y`           |
 
 ### Two-dataset architecture
 
@@ -71,8 +71,7 @@ Wizard state is persisted in the Cribl KV store. An incomplete setup automatical
 
 ## Release Versions
 
-| Version | Changes         |
-| ------- | --------------- |
-| 1.3.0   | Initial release |
-
-
+| Version | Changes                                                       |
+| ------- | ------------------------------------------------------------- |
+| 1.3.1   | Add accelerate fields to search datasets and various UI fixes |
+| 1.3.0   | Initial release                                               |
